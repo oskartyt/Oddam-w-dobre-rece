@@ -1,0 +1,41 @@
+@import "../../scss/settings/colors";
+@mixin about-half-container{
+  display: inline-block;
+  width: 50%;
+  height: 40vw;
+}
+.about{
+  display: flex;
+  .left-side-container {
+    @include about-half-container;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $greyBg;
+    h2{
+      font-size: 1.7rem;
+      font-weight: normal;
+    }
+    p{
+      font-size: 1.2rem;
+      width: 400px;
+      text-align: center;
+    }
+    div.signature{
+      width: 400px;
+      height: 100px;
+      background-image: url("../../assets/Signature.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: right;
+    }
+  }
+  .right-side-container {
+    @include about-half-container;
+    background-image: url("../../assets/People.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}

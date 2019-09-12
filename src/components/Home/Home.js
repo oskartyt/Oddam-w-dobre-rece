@@ -6,6 +6,7 @@ import HomeNav from './HomeNav';
 import HomeTopBlockButtons from './HomeTopBlockButtons';
 import HomeThreeColumns from './HomeThreeColumns';
 import HomeFourSteps from './HomeFourSteps';
+import HomeAbout from './HomeAbout'
 
 class Home extends Component{
     render() {
@@ -22,6 +23,7 @@ class Home extends Component{
             </div>
             <HomeThreeColumns/>
             <HomeFourSteps/>
+            <HomeAbout/>
         </>
     }
 }
