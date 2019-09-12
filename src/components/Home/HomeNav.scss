@@ -1,0 +1,15 @@
+@import "../../scss/settings/colors";
+
+nav{
+  display: inline-block;
+  margin-top: 20px;
+  a{
+    color: $mainFontColor;
+    padding: 5px 10px;
+    text-decoration: none;
+    margin: 5px;
+  }
+  .start{
+    border: 1px solid $mainFontColor;
+  }
+}

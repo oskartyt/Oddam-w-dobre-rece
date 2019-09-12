@@ -1,0 +1,23 @@
+@import "../../scss/settings/colors";
+
+.three-cols{
+  background-color: $gold;
+  display: flex;
+  justify-content: space-around;
+  div.col{
+    width: 28%;
+    text-align: center;
+    padding: 10px 0;
+    h1{
+      font-size: 4rem;
+      font-weight: lighter;
+      margin: 0;
+    }
+    span{
+      text-transform: uppercase;
+    }
+    p{
+      margin-top: 10px;
+    }
+  }
+}

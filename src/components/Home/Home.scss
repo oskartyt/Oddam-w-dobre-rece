@@ -1,0 +1,21 @@
+.top-block{
+  height: 500px;
+  .left-side-container{
+    display: inline-block;
+    width: 50%;
+    background-image: url("../../assets/Home-Hero-Image.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: inherit;
+  }
+  .right-side-container{
+    display: inline-block;
+    width: 50%;
+    height: inherit;
+    .nav-head{
+      margin-right: 10%;
+    }
+  }
+
+}

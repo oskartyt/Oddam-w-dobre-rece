@@ -1,8 +1,21 @@
 import React from 'react';
+import {
+  HashRouter,
+  Route,
+  Link,
+  Switch,
+  NavLink,
+} from 'react-router-dom';
+
+import Home from './components/Home/Home'
 
 function App() {
   return (
-    null
+      <HashRouter>
+        <Switch>
+          <Route exact path='/' render={()=><Home/>}/>
+        </Switch>
+      </HashRouter>
   );
 }
 

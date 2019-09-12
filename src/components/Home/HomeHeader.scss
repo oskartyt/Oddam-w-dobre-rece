@@ -1,0 +1,17 @@
+@import "../../scss/settings/colors";
+header{
+  display: inline-block;
+  margin-top: 15px;
+  .account-link{
+    color: $altFontColor;
+    padding: 5px;
+    margin: 5px;
+  }
+  .login{
+
+  }
+  .register{
+    border: 1px solid $gold;
+  }
+
+}
