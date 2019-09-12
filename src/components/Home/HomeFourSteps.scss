@@ -1,0 +1,59 @@
+@import "../../scss/settings/colors";
+@mixin icon {
+  height: 80px;
+  width: 60px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.white-part{
+  width: 100%;
+  height: 150px;
+  padding: 20px 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  span{
+    margin-top: 20px;
+    font-size: 1.5rem;
+  }
+}
+
+.grey-part{
+  width: 100%;
+  padding: 20px;
+  background-color: $greyBg;
+  display: flex;
+  justify-content: center;
+  .step{
+    height: 200px;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .icon1{
+      @include icon;
+      background-image: url("../../assets/Icon-1.svg");
+    }
+    .icon2{
+      @include icon;
+      background-image: url("../../assets/Icon-2.svg");
+    }
+    .icon3{
+      @include icon;
+      background-image: url("../../assets/Icon-3.svg");
+    }
+    .icon4{
+      @include icon;
+      background-image: url("../../assets/Icon-4.svg");
+    }
+    hr{
+      margin: 5px 0;
+      width: 50%;
+      border-top: 1px solid $mainFontColor;
+    }
+    span{
+      text-align: center;
+    }
+  }
+}

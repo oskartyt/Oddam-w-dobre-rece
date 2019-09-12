@@ -1,3 +1,4 @@
+@import "../../scss/settings/colors";
 .top-block{
   height: 500px;
   .left-side-container{
@@ -17,5 +18,22 @@
       margin-right: 10%;
     }
   }
-
+}
+div.decoration{
+  width:200px;
+  height: 30px;
+  background-image: url("../../assets/Decoration.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 20px;
+}
+a.white-bttn{
+  color: $altFontColor;
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 5px;
+  border: 1px solid $altFontColor;
+  width: 150px;
+  margin: 10px;
 }

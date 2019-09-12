@@ -10,24 +10,8 @@
     font-size: 1.3rem;
     font-weight: normal;
   }
-  div.decoration{
-    width:200px;
-    height: 30px;
-    background-image: url("../../assets/Decoration.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-top: 20px;
-  }
+
   div.bttns{
     display: flex;
-    a{
-      color: $altFontColor;
-      text-align: center;
-      font-size: 1.3rem;
-      padding: 5px;
-      border: 1px solid $altFontColor;
-      width: 150px;
-      margin: 10px;
-    }
   }
 }
