@@ -7,7 +7,7 @@ class HomeFourSteps extends Component{
         return (
             <>
                 <div className='white-part'>
-                    <span>Wystarczą 4 proste kroki</span>
+                    <h2>Wystarczą 4 proste kroki</h2>
                     <div className="decoration"/>
                 </div>
 
