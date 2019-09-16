@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 import './Home.scss';
 
-import HomeHeader from './HomeHeader';
-import HomeNav from './HomeNav';
-import HomeTopBlockButtons from './HomeTopBlockButtons';
-import HomeThreeColumns from './HomeThreeColumns';
-import HomeFourSteps from './HomeFourSteps';
-import HomeAbout from './HomeAbout'
-import HomeOrganizations from './HomeOrganization'
+import HomeHeader from './HomeHeader/HomeHeader';
+import HomeNav from './HomeNav/HomeNav';
+import HomeTopBlockButtons from './HomeTopBlockButtons/HomeTopBlockButtons';
+import HomeThreeColumns from './HomeThreeColumns/HomeThreeColumns';
+import HomeFourSteps from './HomeFourSteps/HomeFourSteps';
+import HomeAbout from './HomeAbout/HomeAbout'
+import HomeOrganizations from './HomeOrganizations/HomeOrganization'
 
 class Home extends Component{
     render() {

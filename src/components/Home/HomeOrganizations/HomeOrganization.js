@@ -106,12 +106,12 @@ class HomeOrganizations extends Component{
                 additional:"Vestibulum vel leo lacus."
             },
             {
-                name:`Fundacja "Lorem Ipsum 2`,
+                name:`Zbiórka "Lorem Ipsum 2`,
                 description:"  Donec nec massa eu arcu dapibus placerat aliquet id lacus. Vestibulum nec pretium ante.",
                 additional:"Vestibulum vel leo lacus."
             },
             {
-                name:`Fundacja "Lorem Ipsum 3`,
+                name:`Zbiórka "Lorem Ipsum 3`,
                 description:"  Donec nec massa eu arcu dapibus placerat aliquet id lacus. Vestibulum nec pretium ante.",
                 additional:"Vestibulum vel leo lacus."
             },

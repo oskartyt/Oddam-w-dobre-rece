@@ -1,4 +1,4 @@
-@import "../../scss/settings/colors";
+@import "../../../scss/settings/colors";
 @mixin icon {
   height: 80px;
   width: 60px;
@@ -33,19 +33,19 @@
     align-items: center;
     .icon1{
       @include icon;
-      background-image: url("../../assets/Icon-1.svg");
+      background-image: url("../../../assets/Icon-1.svg");
     }
     .icon2{
       @include icon;
-      background-image: url("../../assets/Icon-2.svg");
+      background-image: url("../../../assets/Icon-2.svg");
     }
     .icon3{
       @include icon;
-      background-image: url("../../assets/Icon-3.svg");
+      background-image: url("../../../assets/Icon-3.svg");
     }
     .icon4{
       @include icon;
-      background-image: url("../../assets/Icon-4.svg");
+      background-image: url("../../../assets/Icon-4.svg");
     }
     hr{
       margin: 5px 0;
