@@ -1,0 +1,75 @@
+@import "../../../scss/settings/colors";
+
+div.contact{
+  height: 500px;
+  //background-image: url("../../assets/Background-Contact-Form.jpg");
+  position: relative;
+  div::after {
+    content: "";
+    background: url("../../../assets/Background-Contact-Form.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+  form{
+    height: inherit;
+    width: 400px;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 40px;
+    &:after{
+      clear: both;
+    }
+    label{
+      width:100%;
+      margin-top: 30px;
+    }
+    h2{
+      margin-top: 60px;
+      font-size: 1.7rem;
+      font-weight: normal;
+    }
+    .nameAndEmail{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      .singleField{
+        width: 45%;
+        input{
+          width:100%;
+          border-bottom: 1px solid $altFontColor;
+          color: $altFontColor;
+        }
+      }
+    }
+    textarea{
+      border-bottom: 1px solid $altFontColor;
+      color: $altFontColor;
+      width: 100%;
+    }
+    div.submit{
+      width: 100%;
+      submit{
+        float: right;
+        margin: 20px 0;
+        background: none;
+        color: $altFontColor;
+        text-align: center;
+        padding: 10px 30px;
+        border: 1px solid $altFontColor;
+        &:after{
+          clear: both;
+        }
+      }
+    }
+  }
+}

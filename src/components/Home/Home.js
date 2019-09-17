@@ -6,8 +6,10 @@ import HomeNav from './HomeNav/HomeNav';
 import HomeTopBlockButtons from './HomeTopBlockButtons/HomeTopBlockButtons';
 import HomeThreeColumns from './HomeThreeColumns/HomeThreeColumns';
 import HomeFourSteps from './HomeFourSteps/HomeFourSteps';
-import HomeAbout from './HomeAbout/HomeAbout'
-import HomeOrganizations from './HomeOrganizations/HomeOrganization'
+import HomeAbout from './HomeAbout/HomeAbout';
+import HomeOrganizations from './HomeOrganizations/HomeOrganization';
+import HomeContact from './HomeContact/HomeContact';
+
 
 class Home extends Component{
     render() {
@@ -26,6 +28,7 @@ class Home extends Component{
             <HomeFourSteps/>
             <HomeAbout/>
             <HomeOrganizations/>
+            <HomeContact/>
         </>
     }
 }
