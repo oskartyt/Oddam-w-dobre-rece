@@ -9,7 +9,7 @@ import HomeFourSteps from './HomeFourSteps/HomeFourSteps';
 import HomeAbout from './HomeAbout/HomeAbout';
 import HomeOrganizations from './HomeOrganizations/HomeOrganization';
 import HomeContact from './HomeContact/HomeContact';
-
+import HomeFooter from './HomeFooter';
 
 class Home extends Component{
     render() {
@@ -29,6 +29,7 @@ class Home extends Component{
             <HomeAbout/>
             <HomeOrganizations/>
             <HomeContact/>
+            <HomeFooter/>
         </>
     }
 }
