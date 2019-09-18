@@ -6,7 +6,7 @@ class HomeFourSteps extends Component{
     render() {
         return (
             <>
-                <div className='white-part'>
+                <div className='white-part' name="homeFourSteps">
                     <h2>Wystarczą 4 proste kroki</h2>
                     <div className="decoration"/>
                 </div>

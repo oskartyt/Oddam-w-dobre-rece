@@ -163,7 +163,7 @@ class HomeOrganizations extends Component{
         }
         return(
             <>
-                <div className='organizations'>
+                <div className='organizations' name="homeOrganizations">
                     <h2>Komu pomagamy?</h2>
                     <div className="decoration"/>
                     <ul className='organization_choice'>

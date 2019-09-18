@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import './Home.scss';
 
+
+
 import HomeHeader from './HomeHeader/HomeHeader';
 import HomeNav from './HomeNav/HomeNav';
 import HomeTopBlockButtons from './HomeTopBlockButtons/HomeTopBlockButtons';
@@ -9,12 +11,13 @@ import HomeFourSteps from './HomeFourSteps/HomeFourSteps';
 import HomeAbout from './HomeAbout/HomeAbout';
 import HomeOrganizations from './HomeOrganizations/HomeOrganization';
 import HomeContact from './HomeContact/HomeContact';
-import HomeFooter from './HomeFooter';
+import HomeFooter from './HomeFooter/HomeFooter';
+
 
 class Home extends Component{
     render() {
         return <>
-            <div className='container top-block flex'>
+            <div className='container top-block flex' name="homeStart">
                 <div className='left-side-container'/>
                 <div className='right-side-container'>
                     <div className='flex-col-right-top nav-head'>

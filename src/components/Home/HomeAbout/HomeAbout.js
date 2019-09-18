@@ -4,7 +4,7 @@ import './HomeAbout.scss';
 class HomeAbout extends Component{
     render() {
         return (
-            <div className='about'>
+            <div className='about' name="homeAbout">
                 <div className='left-side-container'>
                     <h2>O nas</h2>
                     <div className='decoration'/>
