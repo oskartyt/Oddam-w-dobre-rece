@@ -22,17 +22,17 @@ class HomeOrganizations extends Component{
     state={
         organizations:[
             {
-                name:`Organizacja "Lorem Ipsum 1`,
+                name:`Organizacja "Lorem Ipsum 1"`,
                 description:"Sed molestie sit amet nisi ac venenatis. Suspendisse potenti.",
                 additional:"Nam laoreet consectetur nunc"
             },
             {
-                name:`Organizacja "Lorem Ipsum 2`,
+                name:`Organizacja "Lorem Ipsum 2"`,
                 description:" Vestibulum nec pretium ante. Donec nec massa eu arcu dapibus placerat aliquet id lacus.",
                 additional:"Vestibulum vel leo lacus."
             },
             {
-                name:`Organizacja "Lorem Ipsum 3`,
+                name:`Organizacja "Lorem Ipsum 3"`,
                 description:"  Donec nec massa eu arcu dapibus placerat aliquet id lacus. Vestibulum nec pretium ante.",
                 additional:"Vestibulum vel leo lacus."
             },
@@ -121,8 +121,7 @@ class HomeOrganizations extends Component{
         organizationsPage:0,
     };
     changeTypeOfOrganization=(type)=>{
-        this.setState({currentType:type});
-        this.setState({organizationsPage:0})
+        this.setState({currentType:type,organizationsPage:0});
     };
     changeOrganizationPage=(nr)=>{
         this.setState({organizationsPage:nr})

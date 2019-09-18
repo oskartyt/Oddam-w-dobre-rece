@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77dabcbf-007b-4e3e-9ee4-c8edf8311107" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/HomeAbout/HomeAbout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/HomeAbout/HomeAbout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/HomeAbout/HomeAbout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/HomeAbout/HomeAbout.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Home/HomeContact/HomeContact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/HomeContact/HomeContact.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/HomeContact/HomeContact.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/HomeContact/HomeContact.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/HomeFourSteps/HomeFourSteps.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/HomeFourSteps/HomeFourSteps.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/HomeNav/HomeNav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/HomeNav/HomeNav.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Home/HomeOrganizations/HomeOrganization.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/HomeOrganizations/HomeOrganization.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/HomeOrganizations/HomeOrganization.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/HomeOrganizations/HomeOrganization.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,7 +15,20 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/Home/HomeContact/HomeContact.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="555">
+              <caret line="37" column="6" selection-start-line="37" selection-start-column="6" selection-end-line="37" selection-end-column="6" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -79,11 +84,11 @@
         <option value="$PROJECT_DIR$/src/components/Home/HomeFourSteps/HomeFourSteps.js" />
         <option value="$PROJECT_DIR$/src/components/Home/Home.js" />
         <option value="$PROJECT_DIR$/src/components/Home/HomeAbout/HomeAbout.js" />
-        <option value="$PROJECT_DIR$/src/components/Home/HomeOrganizations/HomeOrganization.js" />
         <option value="$PROJECT_DIR$/src/components/Home/HomeNav/HomeNav.js" />
-        <option value="$PROJECT_DIR$/src/components/Home/HomeContact/HomeContact.js" />
         <option value="$PROJECT_DIR$/src/components/Home/HomeAbout/HomeAbout.scss" />
         <option value="$PROJECT_DIR$/src/components/Home/HomeOrganizations/HomeOrganization.scss" />
+        <option value="$PROJECT_DIR$/src/components/Home/HomeOrganizations/HomeOrganization.js" />
+        <option value="$PROJECT_DIR$/src/components/Home/HomeContact/HomeContact.js" />
       </list>
     </option>
   </component>
@@ -131,6 +136,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="Home" type="462c0819:PsiDirectoryNode" />
+              <item name="HomeContact" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Oddam-w-dobre-rece" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Oddam-w-dobre-rece" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Home" type="462c0819:PsiDirectoryNode" />
               <item name="HomeOrganizations" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -142,18 +155,18 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Tydz_6/Task-RPG" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/Home/HomeFooter" />
       <recent name="$PROJECT_DIR$/src/components/Home/HomeContact" />
       <recent name="$PROJECT_DIR$/src/components/Home/HomeTopBlockButtons" />
       <recent name="$PROJECT_DIR$/src/components/Home/HomeThreeColumns" />
       <recent name="$PROJECT_DIR$/src/components/Home/HomeOrganizations" />
-      <recent name="$PROJECT_DIR$/src/components/Home/HomeNav" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -185,12 +198,12 @@
       <workItem from="1568391891217" duration="63000" />
       <workItem from="1568634501604" duration="11851000" />
       <workItem from="1568702138785" duration="10724000" />
-      <workItem from="1568803684013" duration="3150000" />
+      <workItem from="1568803684013" duration="6245000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55947000" />
+    <option name="totallyTimeSpent" value="59042000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
@@ -199,7 +212,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -452,7 +465,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/HomeFooter.scss">
+    <entry file="file://$PROJECT_DIR$/src/components/Home/HomeFooter/HomeFooter.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="17" column="31" lean-forward="true" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
@@ -473,16 +486,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/HomeContact/HomeContact.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="56" lean-forward="true" selection-start-line="6" selection-start-column="56" selection-end-line="6" selection-end-column="56" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -513,7 +516,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/HomeFooter.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Home/HomeFooter/HomeFooter.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
@@ -532,11 +535,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Home/HomeOrganizations/HomeOrganization.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="975">
-          <caret line="165" column="70" selection-start-line="165" selection-start-column="53" selection-end-line="165" selection-end-column="70" />
+        <state relative-caret-position="270">
+          <caret line="195" column="33" lean-forward="true" selection-start-line="195" selection-start-column="33" selection-end-line="195" selection-end-column="33" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#668#5389#0" />
+            <element signature="e#692#2212#0" />
+            <element signature="e#2233#4521#0" />
+            <element signature="e#4548#5316#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Home/HomeContact/HomeContact.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" column="6" selection-start-line="37" selection-start-column="6" selection-end-line="37" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
