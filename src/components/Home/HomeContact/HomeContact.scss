@@ -38,21 +38,48 @@ div.contact{
       font-size: 1.7rem;
       font-weight: normal;
     }
+    div.messageSend{
+      p{
+        margin: 20px 0;
+        height:50px;
+        width: 300px;
+        text-align: center;
+        font-weight: bold;
+      }
+      p.send{
+        color: green;
+      }
+      p.error{
+        color: red;
+      }
+    }
+    span{
+      display: block;
+      font-size: 0.7rem;
+      color: red;
+      border-top: 1px solid red;
+      width: 100%;
+    }
+    span.correct{
+      width:100%;
+      border-top: 1px solid $altFontColor;
+    }
     .nameAndEmail{
       width: 100%;
       display: flex;
       justify-content: space-between;
       .singleField{
         width: 45%;
+        height: 50px;
         input{
           width:100%;
-          border-bottom: 1px solid $altFontColor;
+          //border-bottom: 1px solid $altFontColor;
           color: $altFontColor;
         }
       }
     }
     textarea{
-      border-bottom: 1px solid $altFontColor;
+      //border-bottom: 1px solid $altFontColor;
       color: $altFontColor;
       width: 100%;
     }
