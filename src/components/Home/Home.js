@@ -20,7 +20,7 @@ class Home extends Component{
             <div className='container top-block flex' name="homeStart">
                 <div className='left-side-container'/>
                 <div className='right-side-container'>
-                    <div className='flex-col-right-top nav-head'>
+                    <div className='flex-col-right-top__header'>
                         <HomeHeader/>
                         <HomeNav/>
                     </div>

@@ -14,20 +14,10 @@
     display: inline-block;
     width: 50%;
     height: inherit;
-    .nav-head{
-      margin-right: 10%;
-    }
+
   }
 }
-div.decoration{
-  width:200px;
-  height: 30px;
-  background-image: url("../../assets/Decoration.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-top: 20px;
-}
+
 a.white-bttn{
   color: $altFontColor;
   text-align: center;
