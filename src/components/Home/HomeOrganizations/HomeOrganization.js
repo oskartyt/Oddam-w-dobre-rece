@@ -2,13 +2,13 @@ import React, {Component} from 'react';
 import './HomeOrganization.scss';
 
 class HomeOrganization  extends Component{
-    //props: name, description, additional, border
+    //props: name, description, additional
     render() {
         return(
-            <div className='organization' style={(this.props.border)? {borderTop: '1px solid #737373'}:{borderTop: 'none'}}>
+            <div className='organization' >
                 <div>
                     <h3>{this.props.name}</h3>
-                    <span>{this.props.description}</span>
+                    <span className='description'>{this.props.description}</span>
                 </div>
                 <div>
                     <span>{this.props.additional}</span>
@@ -20,103 +20,106 @@ class HomeOrganization  extends Component{
 
 class HomeOrganizations extends Component{
     state={
-        organizations:[
-            {
-                name:`Organizacja "Lorem Ipsum 1"`,
-                description:"Sed molestie sit amet nisi ac venenatis. Suspendisse potenti.",
-                additional:"Nam laoreet consectetur nunc"
-            },
-            {
-                name:`Organizacja "Lorem Ipsum 2"`,
-                description:" Vestibulum nec pretium ante. Donec nec massa eu arcu dapibus placerat aliquet id lacus.",
-                additional:"Vestibulum vel leo lacus."
-            },
-            {
-                name:`Organizacja "Lorem Ipsum 3"`,
-                description:"  Donec nec massa eu arcu dapibus placerat aliquet id lacus. Vestibulum nec pretium ante.",
-                additional:"Vestibulum vel leo lacus."
-            },
-            {
-                name:`Organizacja "Lorem Ipsum 4`,
-                description:"  Donec nec massa eu arcu dapibus placerat aliquet id lacus. Vestibulum nec pretium ante.",
-                additional:"Vestibulum vel leo lacus."
-            },
-            {
-                name:`Organizacja "Lorem Ipsum 5`,
-                description:"  Donec nec massa eu arcu dapibus placerat aliquet id lacus. Vestibulum nec pretium ante.",
-                additional:"Vestibulum vel leo lacus."
-            },
-            {
-                name:`Organizacja "Lorem Ipsum 6`,
-                description:"  Donec nec massa eu arcu dapibus placerat aliquet id lacus. Vestibulum nec pretium ante.",
-                additional:"Vestibulum vel leo lacus."
-            }
-        ],
-        fundations:[
-            {
-                name:`Fundacja "Lorem Ipsum 1`,
-                description:"  Donec nec massa eu arcu dapibus placerat aliquet id lacus. Vestibulum nec pretium ante.",
-                additional:"Vestibulum vel leo lacus."
-            },
-            {
-                name:`Fundacja "Lorem Ipsum 2`,
-                description:"  Donec nec massa eu arcu dapibus placerat aliquet id lacus. Vestibulum nec pretium ante.",
-                additional:"Vestibulum vel leo lacus."
-            },
-            {
-                name:`Fundacja "Lorem Ipsum 3`,
-                description:"  Donec nec massa eu arcu dapibus placerat aliquet id lacus. Vestibulum nec pretium ante.",
-                additional:"Vestibulum vel leo lacus."
-            },
-            {
-                name:`Fundacja "Lorem Ipsum 4`,
-                description:"  Donec nec massa eu arcu dapibus placerat aliquet id lacus. Vestibulum nec pretium ante.",
-                additional:"Vestibulum vel leo lacus."
-            },
-            {
-                name:`Fundacja "Lorem Ipsum 5`,
-                description:"  Donec nec massa eu arcu dapibus placerat aliquet id lacus. Vestibulum nec pretium ante.",
-                additional:"Vestibulum vel leo lacus."
-            },
-            {
-                name:`Fundacja "Lorem Ipsum 6`,
-                description:"  Donec nec massa eu arcu dapibus placerat aliquet id lacus. Vestibulum nec pretium ante.",
-                additional:"Vestibulum vel leo lacus."
-            },
-            {
-                name:`Fundacja "Lorem Ipsum 7`,
-                description:"  Donec nec massa eu arcu dapibus placerat aliquet id lacus. Vestibulum nec pretium ante.",
-                additional:"Vestibulum vel leo lacus."
-            },
-            {
-                name:`Fundacja "Lorem Ipsum 8`,
-                description:"  Donec nec massa eu arcu dapibus placerat aliquet id lacus. Vestibulum nec pretium ante.",
-                additional:"Vestibulum vel leo lacus."
-            },
-            {
-                name:`Fundacja "Lorem Ipsum 9`,
-                description:"  Donec nec massa eu arcu dapibus placerat aliquet id lacus. Vestibulum nec pretium ante.",
-                additional:"Vestibulum vel leo lacus."
-            },
-        ],
-        localCollections:[
-            {
-                name:`Zbiórka "Lorem Ipsum 1`,
-                description:"  Donec nec massa eu arcu dapibus placerat aliquet id lacus. Vestibulum nec pretium ante.",
-                additional:"Vestibulum vel leo lacus."
-            },
-            {
-                name:`Zbiórka "Lorem Ipsum 2`,
-                description:"  Donec nec massa eu arcu dapibus placerat aliquet id lacus. Vestibulum nec pretium ante.",
-                additional:"Vestibulum vel leo lacus."
-            },
-            {
-                name:`Zbiórka "Lorem Ipsum 3`,
-                description:"  Donec nec massa eu arcu dapibus placerat aliquet id lacus. Vestibulum nec pretium ante.",
-                additional:"Vestibulum vel leo lacus."
-            },
+        data:{
+            'organizations':[
+                {
+                    name:`Organizacja "Lorem Ipsum 1"`,
+                    description:"Sed molestie sit amet nisi ac venenatis. Suspendisse potenti.",
+                    additional:"Nam laoreet consectetur nunc"
+                },
+                {
+                    name:`Organizacja "Lorem Ipsum 2"`,
+                    description:" Vestibulum nec pretium ante. Donec nec massa eu arcu dapibus placerat aliquet id lacus.",
+                    additional:"Vestibulum vel leo lacus."
+                },
+                {
+                    name:`Organizacja "Lorem Ipsum 3"`,
+                    description:"  Donec nec massa eu arcu dapibus placerat aliquet id lacus. Vestibulum nec pretium ante.",
+                    additional:"Vestibulum vel leo lacus."
+                },
+                {
+                    name:`Organizacja "Lorem Ipsum 4"`,
+                    description:"  Donec nec massa eu arcu dapibus placerat aliquet id lacus. Vestibulum nec pretium ante.",
+                    additional:"Vestibulum vel leo lacus."
+                },
+                {
+                    name:`Organizacja "Lorem Ipsum 5"`,
+                    description:"  Donec nec massa eu arcu dapibus placerat aliquet id lacus. Vestibulum nec pretium ante.",
+                    additional:"Vestibulum vel leo lacus."
+                },
+                {
+                    name:`Organizacja "Lorem Ipsum 6"`,
+                    description:"  Donec nec massa eu arcu dapibus placerat aliquet id lacus. Vestibulum nec pretium ante.",
+                    additional:"Vestibulum vel leo lacus."
+                }
+            ],
+            'fundations':[
+                {
+                    name:`Fundacja "Lorem Ipsum 1"`,
+                    description:"  Donec nec massa eu arcu dapibus placerat aliquet id lacus. Vestibulum nec pretium ante.",
+                    additional:"Vestibulum vel leo lacus."
+                },
+                {
+                    name:`Fundacja "Lorem Ipsum 2"`,
+                    description:"  Donec nec massa eu arcu dapibus placerat aliquet id lacus. Vestibulum nec pretium ante.",
+                    additional:"Vestibulum vel leo lacus."
+                },
+                {
+                    name:`Fundacja "Lorem Ipsum 3"`,
+                    description:"  Donec nec massa eu arcu dapibus placerat aliquet id lacus. Vestibulum nec pretium ante.",
+                    additional:"Vestibulum vel leo lacus."
+                },
+                {
+                    name:`Fundacja "Lorem Ipsum 4"`,
+                    description:"  Donec nec massa eu arcu dapibus placerat aliquet id lacus. Vestibulum nec pretium ante.",
+                    additional:"Vestibulum vel leo lacus."
+                },
+                {
+                    name:`Fundacja "Lorem Ipsum 5"`,
+                    description:"  Donec nec massa eu arcu dapibus placerat aliquet id lacus. Vestibulum nec pretium ante.",
+                    additional:"Vestibulum vel leo lacus."
+                },
+                {
+                    name:`Fundacja "Lorem Ipsum 6"`,
+                    description:"  Donec nec massa eu arcu dapibus placerat aliquet id lacus. Vestibulum nec pretium ante.",
+                    additional:"Vestibulum vel leo lacus."
+                },
+                {
+                    name:`Fundacja "Lorem Ipsum 7"`,
+                    description:"  Donec nec massa eu arcu dapibus placerat aliquet id lacus. Vestibulum nec pretium ante.",
+                    additional:"Vestibulum vel leo lacus."
+                },
+                {
+                    name:`Fundacja "Lorem Ipsum 8"`,
+                    description:"  Donec nec massa eu arcu dapibus placerat aliquet id lacus. Vestibulum nec pretium ante.",
+                    additional:"Vestibulum vel leo lacus."
+                },
+                {
+                    name:`Fundacja "Lorem Ipsum 9"`,
+                    description:"  Donec nec massa eu arcu dapibus placerat aliquet id lacus. Vestibulum nec pretium ante.",
+                    additional:"Vestibulum vel leo lacus."
+                },
+            ],
+            'localCollections':[
+                {
+                    name:`Zbiórka "Lorem Ipsum 1"`,
+                    description:"  Donec nec massa eu arcu dapibus placerat aliquet id lacus. Vestibulum nec pretium ante.",
+                    additional:"Vestibulum vel leo lacus."
+                },
+                {
+                    name:`Zbiórka "Lorem Ipsum 2"`,
+                    description:"  Donec nec massa eu arcu dapibus placerat aliquet id lacus. Vestibulum nec pretium ante.",
+                    additional:"Vestibulum vel leo lacus."
+                },
+                {
+                    name:`Zbiórka "Lorem Ipsum 3"`,
+                    description:"  Donec nec massa eu arcu dapibus placerat aliquet id lacus. Vestibulum nec pretium ante.",
+                    additional:"Vestibulum vel leo lacus."
+                },
 
-        ],
+            ],
+        },
+
         currentType:"organizations",
         organizationsPage:0,
     };
@@ -126,40 +129,25 @@ class HomeOrganizations extends Component{
     changeOrganizationPage=(nr)=>{
         this.setState({organizationsPage:nr})
     };
-    render(){
-        let displayedOrganizations=[];
-        let nrOfBttons=0;
-        switch (this.state.currentType){
-            case 'organizations':
-                nrOfBttons=Math.ceil(this.state.organizations.length/3);
-                for (let i=this.state.organizationsPage*3;
-                     (i<(this.state.organizationsPage+1)*3 && i<this.state.organizations.length);
-                     i++) {
-                        displayedOrganizations.push(this.state.organizations[i])
-                }
-                break;
-            case 'fundations':
-                nrOfBttons=Math.ceil(this.state.fundations.length/3);
-                for (let i=this.state.organizationsPage*3;
-                     (i<(this.state.organizationsPage+1)*3 && i<this.state.fundations.length);
-                     i++) {
-                    displayedOrganizations.push(this.state.fundations[i])
-                }
-                break;
-            case 'localCollections':
-                nrOfBttons=Math.ceil(this.state.localCollections.length/3);
-                for (let i=this.state.organizationsPage*3;
-                     (i<(this.state.organizationsPage+1)*3 && i<this.state.localCollections.length);
-                     i++) {
-                    displayedOrganizations.push(this.state.localCollections[i])
-                }
-                break;
-            default:
-                nrOfBttons=Math.ceil(this.state.organizations.length/3);
-                for (let i=0; (i<3 && i<this.state.organizations.length); i++){
-                    displayedOrganizations.push(this.state.organizations[i])
-                }
+    createPageButtons=(nr)=>{
+        if (nr<2){
+            return null;
+        }else{
+            let buttons=[];
+            for (let i=0;i<nr;i++){
+                buttons.push(<button key={i} className={(this.state.organizationsPage===i)?"active":"pasive"} onClick={()=>{this.changeOrganizationPage(i)}}>{i+1}</button>)
+            }
+            return buttons;
         }
+    };
+    render(){
+        const data=this.state.data;
+        const type=this.state.currentType;
+        const page=this.state.organizationsPage;
+
+        const nrOfBttons=Math.ceil(data[type].length/3);
+        let displayedOrganizations=data[type].slice(page*3,(page+1)*3);
+
         return(
             <>
                 <div className='organizations' name="homeOrganizations">
@@ -174,18 +162,13 @@ class HomeOrganizations extends Component{
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </p>
                     <div className='organizations-details'>
-                        {displayedOrganizations.map((e,index)=>{
-                            if (index===0){
-                                return <HomeOrganization key={index} name={e.name} description={e.description} additional={e.additional} border={false}/>
-                            }else{
-                                return <HomeOrganization key={index} name={e.name} description={e.description} additional={e.additional} border={true}/>
-                            }
-                        })}
+                        {displayedOrganizations.map((e,index)=>(
+                            <HomeOrganization key={index} name={e.name} description={e.description} additional={e.additional} border={false}/>
+                            )
+                        )}
                     </div>
                     <div className='pageBttns'>
-                        {(nrOfBttons>=2) && <button className={(this.state.organizationsPage===0)?"active":"pasive"} onClick={()=>{this.changeOrganizationPage(0)}}>1</button>}
-                        {(nrOfBttons>=2) && <button className={(this.state.organizationsPage===1)?"active":"pasive"} onClick={()=>{this.changeOrganizationPage(1)}}>2</button>}
-                        {(nrOfBttons>=3) && <button className={(this.state.organizationsPage===2)?"active":"pasive"} onClick={()=>{this.changeOrganizationPage(2)}}>3</button>}
+                        {this.createPageButtons(nrOfBttons)}
                     </div>
                 </div>
             </>
