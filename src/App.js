@@ -10,6 +10,7 @@ import {
 import Home from './components/Home/Home'
 import Login from './components/LoginRegisterLogout/Login'
 import Register from './components/LoginRegisterLogout/Register'
+import Logout from './components/LoginRegisterLogout/Logout'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route exact path='/' render={()=><Home/>}/>
           <Route path='/logowanie' render={()=><Login/>}/>
           <Route path='/rejestracja' render={()=><Register/>}/>
+          <Route path='/wylogowano' render={()=><Logout/>}/>
         </Switch>
       </HashRouter>
   );
