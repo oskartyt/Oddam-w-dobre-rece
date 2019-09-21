@@ -1,5 +1,5 @@
 @import "../../scss/settings/colors";
-div.login{
+div.login, div.register{
   margin-top: 100px;
   display: flex;
   flex-direction: column;
@@ -13,7 +13,7 @@ div.login{
     display: flex;
     flex-direction: column;
     align-items: center;
-    .login-form-fields{
+    .form-fields{
       padding: 20px 50px 10px 50px;
       width:350px;
       display: flex;
@@ -44,7 +44,7 @@ div.login{
 
 
     }
-    .login-form-buttons{
+    .form-buttons{
       margin-top: 30px;
       width: 450px;
       display: flex;

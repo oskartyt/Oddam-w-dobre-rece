@@ -8,7 +8,8 @@ import {
 } from 'react-router-dom';
 
 import Home from './components/Home/Home'
-import Login from './components/Login/Login'
+import Login from './components/LoginAndRegister/Login'
+import Register from './components/LoginAndRegister/Register'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Switch>
           <Route exact path='/' render={()=><Home/>}/>
           <Route path='/logowanie' render={()=><Login/>}/>
+          <Route path='/rejestracja' render={()=><Register/>}/>
         </Switch>
       </HashRouter>
   );

@@ -7,12 +7,14 @@ import HomeNav from "../Home/HomeNav/HomeNav";
 import {Link} from 'react-router-dom';
 
 
-class Login extends Component{
+class Register extends Component{
     state={
         email:'',
         password:'',
+        password2:'',
         emailError:false,
         passwordError:false,
+        password2Error:false,
     };
     handleChange = e =>{
         this.setState({
@@ -45,11 +47,11 @@ class Login extends Component{
                     <HomeHeader/>
                     <HomeNav/>
                 </div>
-                <div className='login'>
-                    <h2>Zaloguj się</h2>
+                <div className='register'>
+                    <h2>Załóż konto</h2>
                     <div className='decoration'/>
                     <form onSubmit={this.handleSubmit}>
-                        <div className='login-form-fields'>
+                        <div className='form-fields'>
                             <div className='single-field'>
                                 <label htmlFor="">Email</label>
                                 <input type="text" value={this.state.email} name='email' onChange={this.handleChange}/>
@@ -60,10 +62,15 @@ class Login extends Component{
                                 <input type="password" value={this.state.password} name='password' onChange={this.handleChange}/>
                                 {(this.state.passwordError)?<span>Podane hasło jest za krótkie!</span>:<span className='correct'/>}
                             </div>
+                            <div className='single-field'>
+                                <label htmlFor="">Powtórz hasło</label>
+                                <input type="password" value={this.state.password2} name='password2' onChange={this.handleChange}/>
+                                {(this.state.passwordError)?<span>Podane hasło jest za krótkie!</span>:<span className='correct'/>}
+                            </div>
                         </div>
-                        <div className='login-form-buttons'>
-                            <Link className='create-account' to="/rejestracja">Załóż konto</Link>
-                            <input type="submit" className='sign-in' value='Zaloguj się'/>
+                        <div className='form-buttons'>
+                            <Link className='create-account' to="/logowanie">Zaloguj się</Link>
+                            <input type="submit" className='sign-in' value='Załóż konto'/>
                         </div>
                     </form>
                 </div>
@@ -72,4 +79,4 @@ class Login extends Component{
     }
 }
 
-export default Login;
+export default Register;
