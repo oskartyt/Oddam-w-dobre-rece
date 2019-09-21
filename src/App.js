@@ -8,8 +8,8 @@ import {
 } from 'react-router-dom';
 
 import Home from './components/Home/Home'
-import Login from './components/LoginAndRegister/Login'
-import Register from './components/LoginAndRegister/Register'
+import Login from './components/LoginRegisterLogout/Login'
+import Register from './components/LoginRegisterLogout/Register'
 
 function App() {
   return (

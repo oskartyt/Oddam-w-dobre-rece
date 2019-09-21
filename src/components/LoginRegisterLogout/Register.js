@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './Login.scss';
+import './LoginRegisterLogout.scss';
 
 import HomeHeader from "../Home/HomeHeader/HomeHeader";
 import HomeNav from "../Home/HomeNav/HomeNav";
@@ -25,6 +25,7 @@ class Register extends Component{
         e.preventDefault();
         let email=this.state.email;
         let password=this.state.password;
+        let password2=this.state.password2;
 
         let emailRegex= /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
@@ -38,6 +39,11 @@ class Register extends Component{
             this.setState({passwordError:true});
         }else{
             this.setState({passwordError:false});
+        }
+        if (password2!==password){
+            this.setState({password2Error:true});
+        }else{
+            this.setState({password2Error:false});
         }
     };
     render() {
@@ -65,12 +71,12 @@ class Register extends Component{
                             <div className='single-field'>
                                 <label htmlFor="">Powtórz hasło</label>
                                 <input type="password" value={this.state.password2} name='password2' onChange={this.handleChange}/>
-                                {(this.state.passwordError)?<span>Podane hasło jest za krótkie!</span>:<span className='correct'/>}
+                                {(this.state.password2Error)?<span>Powtórzone hasło jest inne!</span>:<span className='correct'/>}
                             </div>
                         </div>
                         <div className='form-buttons'>
-                            <Link className='create-account' to="/logowanie">Zaloguj się</Link>
-                            <input type="submit" className='sign-in' value='Załóż konto'/>
+                            <Link to="/logowanie">Zaloguj się</Link>
+                            <input type="submit" value='Załóż konto'/>
                         </div>
                     </form>
                 </div>

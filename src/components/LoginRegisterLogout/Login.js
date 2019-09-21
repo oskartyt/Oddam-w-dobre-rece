@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './Login.scss';
+import './LoginRegisterLogout.scss';
 
 import HomeHeader from "../Home/HomeHeader/HomeHeader";
 import HomeNav from "../Home/HomeNav/HomeNav";
@@ -62,8 +62,8 @@ class Login extends Component{
                             </div>
                         </div>
                         <div className='form-buttons'>
-                            <Link className='create-account' to="/rejestracja">Załóż konto</Link>
-                            <input type="submit" className='sign-in' value='Zaloguj się'/>
+                            <Link to="/rejestracja">Załóż konto</Link>
+                            <input type="submit" value='Zaloguj się'/>
                         </div>
                     </form>
                 </div>
