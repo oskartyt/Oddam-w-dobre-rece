@@ -13,6 +13,7 @@ class Login extends Component{
         password:'',
         emailError:false,
         passwordError:false,
+        passwordAuthError:false,
     };
     handleChange = e =>{
         this.setState({
@@ -23,19 +24,36 @@ class Login extends Component{
         e.preventDefault();
         let email=this.state.email;
         let password=this.state.password;
+        let emailError=false;
+        let emailAuthError=false;
+        let passwordError=false;
+        let passwordAuthError=false;
 
         let emailRegex= /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
         if (!emailRegex.test(email)){
-            this.setState({emailError:true});
+            emailError=true;
         }else{
             this.setState({emailError:false});
         }
 
-        if (password.length<6){
-            this.setState({passwordError:true});
-        }else{
-            this.setState({passwordError:false});
+        if (password.length<6) {
+            passwordError=true;
+        }
+
+        this.setState({emailError,passwordError});
+        if (!emailError && !passwordError){
+            this.props.firebase
+                .doSignInWithEmailAndPassword(email, password)
+                .then(authUser => {
+                    this.setState({ email:'', password:''});
+                    this.props.history.push("/");
+                    console.log("Działą logowanie do firebase'a")
+                })
+                .catch(error => {
+                    console.log(error);
+                    this.setState({ error });
+                });
         }
     };
     render() {

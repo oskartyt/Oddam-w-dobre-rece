@@ -19,17 +19,25 @@ const RegisterBase=withRouter(Register)
 
 function App() {
   return (
-      <HashRouter>
-        <Switch>
-          <Route exact path='/' render={()=><Home/>}/>
-          <Route path='/logowanie' render={()=><Login/>}/>
-          <FirebaseContext.Consumer>
-                {firebase => <Route path='/rejestracja' render={()=><RegisterBase firebase={firebase}/>}/>}
-          </FirebaseContext.Consumer>
-          {/*<Route path='/rejestracja' render={()=><Register/>}/>*/}
-          <Route path='/wylogowano' render={()=><Logout/>}/>
-        </Switch>
-      </HashRouter>
+      <FirebaseContext.Consumer>
+        {firebase=>
+            <HashRouter>
+              <Switch>
+                <Route exact path='/' render={()=><Home/>}/>
+                {/*<Route path='/logowanie' render={()=><Login/>}/>*/}
+                <Route path='/logowanie' render={()=><Login firebase={firebase}/>}/>
+
+                <Route path='/rejestracja' render={()=><RegisterBase firebase={firebase}/>}/>
+
+
+                {/*<Route path='/rejestracja' render={()=><Register/>}/>*/}
+                <Route path='/wylogowano' render={()=><Logout/>}/>
+                {/*  Not found*/}
+              </Switch>
+            </HashRouter>
+        }
+
+      </FirebaseContext.Consumer>
   );
 }
 

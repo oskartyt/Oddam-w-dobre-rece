@@ -26,27 +26,26 @@ class Register extends Component{
         let email=this.state.email;
         let password=this.state.password;
         let password2=this.state.password2;
+        let emailError=false;
+        let passwordError=false;
+        let password2Error=false;
 
         let emailRegex= /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-        if (!emailRegex.test(email)){
-            this.setState({emailError:true});
-        }else{
-            this.setState({emailError:false});
+        if (!emailRegex.test(email)) {
+            emailError = true;
         }
 
         if (password.length<6){
-            this.setState({passwordError:true});
-        }else{
-            this.setState({passwordError:false});
-        }
-        if (password2!==password){
-            this.setState({password2Error:true});
-        }else{
-            this.setState({password2Error:false});
+            passwordError=true;
         }
 
-        if (!this.state.emailError && !this.state.passwordError && !this.state.password2Error){
+        if (password2!==password){
+            password2Error=true;
+        }
+        this.setState({emailError, passwordError, password2Error});
+
+        if (!emailError && !passwordError && !password2Error){
             this.props.firebase
                 .doCreateUserWithEmailAndPassword(email, password)
                 .then(authUser => {
