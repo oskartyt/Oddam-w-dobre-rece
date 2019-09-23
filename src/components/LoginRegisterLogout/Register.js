@@ -45,6 +45,20 @@ class Register extends Component{
         }else{
             this.setState({password2Error:false});
         }
+
+        if (!this.state.emailError && !this.state.passwordError && !this.state.password2Error){
+            this.props.firebase
+                .doCreateUserWithEmailAndPassword(email, password)
+                .then(authUser => {
+                    this.setState({ email:'', password:'', password2:''});
+                    this.props.history.push("/");
+                    console.log("Działą wysyłka do firebase'a")
+                })
+                .catch(error => {
+                    console.log(error);
+                    this.setState({ error });
+                });
+        }
     };
     render() {
         return(
