@@ -13,6 +13,7 @@ class Register extends Component{
         password:'',
         password2:'',
         emailError:false,
+        emailAlreadyInUseError:false,
         passwordError:false,
         password2Error:false,
     };
@@ -51,12 +52,20 @@ class Register extends Component{
                 .then(authUser => {
                     this.setState({ email:'', password:'', password2:''});
                     this.props.history.push("/");
+                    this.setState({emailAlreadyInUseError:false});
                     console.log("Działą wysyłka do firebase'a")
                 })
                 .catch(error => {
-                    console.log(error);
+                    console.log(error.code);
+                    if (error.code=="auth/email-already-in-use"){
+                        this.setState({emailAlreadyInUseError:true})
+                    }else{
+                        this.setState({emailAlreadyInUseError:false})
+                    }
                     this.setState({ error });
                 });
+        }else{
+            this.setState({emailAlreadyInUseError:false});
         }
     };
     render() {
@@ -74,7 +83,9 @@ class Register extends Component{
                             <div className='single-field'>
                                 <label htmlFor="">Email</label>
                                 <input type="text" value={this.state.email} name='email' onChange={this.handleChange}/>
-                                {(this.state.emailError)?<span>Podany email jest nieprawidłowy!</span>:<span className='correct'/>}
+                                {(this.state.emailError || this.state.emailAlreadyInUseError)
+                                    ? <span>{(this.state.emailAlreadyInUseError)?'Podany email jest już zajęty':'Podany email jest nieprawidłowy!'}</span>
+                                    :<span className='correct'/>}
                             </div>
                             <div className='single-field'>
                                 <label htmlFor="">Hasło</label>
