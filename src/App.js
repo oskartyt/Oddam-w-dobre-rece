@@ -15,7 +15,8 @@ import Login from './components/LoginRegisterLogout/Login'
 import Register from './components/LoginRegisterLogout/Register'
 import Logout from './components/LoginRegisterLogout/Logout'
 
-const RegisterBase=withRouter(Register)
+const RegisterBase=withRouter(Register);
+const LoginBase=withRouter(Login);
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
               <Switch>
                 <Route exact path='/' render={()=><Home/>}/>
                 {/*<Route path='/logowanie' render={()=><Login/>}/>*/}
-                <Route path='/logowanie' render={()=><Login firebase={firebase}/>}/>
+                <Route path='/logowanie' render={()=><LoginBase firebase={firebase}/>}/>
 
                 <Route path='/rejestracja' render={()=><RegisterBase firebase={firebase}/>}/>
 

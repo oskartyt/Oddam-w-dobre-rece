@@ -42,6 +42,7 @@ class Login extends Component{
         }
 
         this.setState({emailError,passwordError});
+
         if (!emailError && !passwordError){
             this.props.firebase
                 .doSignInWithEmailAndPassword(email, password)
